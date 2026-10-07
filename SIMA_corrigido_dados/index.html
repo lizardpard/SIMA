@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="SIMA: clima e qualidade do ar nos parques do Recife, medidos por sensores.">
+<title>SIMA · Ar dos parques do Recife</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2026-09-29-5">
+<link rel="stylesheet" href="style-modern.css?v=2026-09-29-5">
+</head>
+<body>
+<header class="top"><div class="wrap bar">
+  <div class="brand">SIMA<small>Sistema de Monitoramento Ambiental</small></div>
+  <div class="tabs" role="tablist" aria-label="Tipo de visualização">
+    <button role="tab" id="t-cid" aria-controls="p-cid" aria-selected="true">Para o cidadão</button>
+    <button role="tab" id="t-pes" aria-controls="p-pes" aria-selected="false" tabindex="-1">Pesquisa</button>
+  </div>
+</div></header>
+<main class="wrap">
+  <div class="site-intro"><p class="eyebrow">Monitoramento ambiental urbano</p><h1>Como está o ambiente nos parques?</h1><p>Consulte de forma simples as condições registradas pelos sensores do SIMA ou abra a área de Pesquisa para comparar séries históricas e indicadores.</p></div>
+  <section id="p-cid" role="tabpanel" aria-labelledby="t-cid"></section>
+  <section id="p-pes" role="tabpanel" aria-labelledby="t-pes" hidden></section>
+</main>
+<footer class="wrap">SIMA, Sistema de Monitoramento Ambiental dos parques do Recife. Sensores de baixo custo: use os valores como indicativo, não como medição oficial.</footer>
+<div id="tip" class="tip" hidden></div>
+<script src="dados.js?v=2026-09-29-3"></script>
+<script src="function.js?v=2026-09-29-3"></script>
+</body>
+</html>
